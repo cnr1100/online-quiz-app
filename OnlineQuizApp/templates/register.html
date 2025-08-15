@@ -1,0 +1,58 @@
+{% load static %}
+<html>
+	<head>
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">	
+		<title>Online Quiz</title>
+	</head>
+	<body>
+		<div id="header">
+		<h1 style="display: flex; align-items: center; justify-content: center;">Online Quiz</h1>
+		<div id="links">
+		<ul>
+		<li><a href="{% url 'home' %}"><h3 style="color:green">HOME</h3></a></li>
+		<li><a href="{% url 'user' %}"><h3 style="color:green">USER</h3></a></li>
+		<li><a href="{% url 'admin' %}"><h3 style="color:green">ADMIN</h3></a></li>
+		</ul>
+		</div>
+		<div id="body">
+			<center>
+			<h1 style="color:white">SIGNUP</h1>
+			<table>
+				<tr>
+					<th>FIRSTNAME</th>	
+					<td><input type="text" name="firstname" placeholder="firstname"></td>
+				</tr>
+				<tr>
+					<th>SECTION</th>	
+					<td><input type="text" name="section" placeholder="section"></td>
+				</tr>
+				<tr>
+					<th>YEAR</th>	
+					<td><input type="text" name="year" placeholder="year"></td>
+				</tr>
+				<tr>
+					<th>BRANCH</th>	
+					<td><input type="text" name="branch" placeholder="branch"></td>
+				</tr>
+				<tr>
+					<th>ROLL NO</th>	
+					<td><input type="text" name="roll no" placeholder="roll no"></td>
+				</tr>
+				<tr>
+					<th>USERNAME</th>	
+					<td><input type="text" name="username" placeholder="Username"></td>
+				</tr>
+				<tr>
+				<th>PASSWORD</th>
+				<td><input type="text" psw="password" placeholder="Password"></td>
+				<td><input type="button" value="SIGNUP"></td>
+			</tr>			
+</table>
+	<h3>Already Have an Account !!!! <a href="{% url 'user' %}">Login</a></h3>
+	</center>
+		</div>
+		<div id="footer">
+			<h3> Designed by : Chowdary Narayana Rao</h3>
+		</div>
+	</body>
+</html>

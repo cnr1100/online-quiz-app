@@ -1,0 +1,75 @@
+# 🔐 SECURITY-SENSITIVE FILES
+.env
+.env.*
+*.env
+local_settings.py
+*.pem
+*.key
+*.crt
+
+# 🐍 PYTHON ARTIFACTS
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.log
+*.sqlite3
+*.db
+*.pid
+
+# 🧪 VIRTUAL ENVIRONMENTS
+venv/
+env/
+ENV/
+.venv/
+*.virtualenv
+
+# ⚙️ DJANGO STATIC & MEDIA
+media/
+static/
+staticfiles/
+
+# 🧾 DATABASE FILES
+*.sql
+*.sql.gz
+*.mysql
+
+# 🧬 MIGRATIONS
+*/migrations/
+*/migrations/*.pyc
+*/migrations/__pycache__/
+
+# 🧪 TESTING & COVERAGE
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+nosetests.xml
+coverage.xml
+
+# 📓 JUPYTER NOTEBOOKS
+.ipynb_checkpoints/
+
+# 🧰 IDE & SYSTEM FILES
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 📦 BUILD & DIST FILES
+dist/
+build/
+*.tar.gz
+*.zip
+*.whl
+
+# 🧼 BACKUPS & TEMP FILES
+*.bak
+*.swp
+*.tmp
+*.cache/
+
